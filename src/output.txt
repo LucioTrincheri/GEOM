@@ -1,0 +1,443 @@
+Array
+(
+    [0] => Array
+        (
+            [descripcion] => El término pixel hace referencia a
+            [respuestas_correctas] => Array
+                (
+                    [0] => La unidad mínima de información de una imagen.
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => La longitud de la diagonal de una imagen en pulgadas.
+                    [1] => La cantidad de puntos por pulgada.
+                    [2] => La cantidad de colores de un punto.
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+        )
+
+    [1] => Array
+        (
+            [descripcion] => Para las imágenes vectoriales se cumple que
+            [respuestas_correctas] => Array
+                (
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Poseen un número fijo de píxeles.
+                    [1] => Son creadas por los escaners y las cámaras digitales.
+                    [2] => Pueden perder detalle y verse pixeladas cuando se amplían.
+                    [3] => A cada píxel se le asigna una ubicación y un valor de color específico.
+                )
+
+        )
+
+    [2] => Array
+        (
+            [descripcion] => Para las imágenes de mapas de bits se cumple que
+            [respuestas_correctas] => Array
+                (
+                    [0] => A cada píxel se le asigna una ubicación y un valor de color específico.
+                    [1] => Constan de un número fijo de píxeles.
+                    [2] => Son creadas por los escaners y las cámaras digitales.
+                    [3] => Pueden perder detalle y verse pixeladas cuando se amplían.
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                )
+
+        )
+
+    [3] => Array
+        (
+            [descripcion] => Las extensiones de archivo que pertenecen al grupo de mapas de bits son
+            [respuestas_correctas] => Array
+                (
+                    [0] => JPG, BMP, PNG, GIF
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Solo PNG
+                    [1] => Solo JPG
+                    [2] => Solo BMP
+                    [3] => Solo GIF
+                    [4] => JPG, BMP, PNG, GIF y SVG
+                )
+
+        )
+
+    [4] => Array
+        (
+            [descripcion] => ¿Cuál de las siguientes afirmaciones es incorrecta?
+            [respuestas_correctas] => Array
+                (
+                    [0] => JPG: Permite imágenes animadas
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => PNG: Permite transparencia
+                    [1] => GIF: Soporta transparencia pero no translucidez.
+                    [2] => BMP: No soporta transparencia.
+                    [3] => SVG: Permite transparencias.
+                )
+
+        )
+
+    [5] => Array
+        (
+            [descripcion] => El formato BMP
+            [respuestas_correctas] => Array
+                (
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Ha sido diseñado específicamente para comprimir imágenes digitales.
+                    [1] => Puede implicar perder algo de la calidad de la imagen si se define cierto factor de compresión.
+                    [2] => Siempre tienen una profundidad de color de 1 bit.
+                    [3] => Permite transparencias.
+                    [4] => Reduce el tamaño de archivo porque elimina la información del color.
+                )
+
+        )
+
+    [6] => Array
+        (
+            [descripcion] => En las imágenes del tipo vectorial
+            [respuestas_correctas] => Array
+                (
+                    [0] => La calidad de la imagen no varía al modificar el tamaño de la misma.
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Se reducen los colores de la imagen a un máximo de 256.
+                    [1] => Se reduce el tamaño del archivo porque elimina la información del color.
+                    [2] => Cada píxel tiene un valor de brillo comprendido entre 0 (negro) y 255 (blanco).
+                )
+
+        )
+
+    [7] => Array
+        (
+            [descripcion] => El formato PNG es superior al BMP porque
+            [respuestas_correctas] => Array
+                (
+                    [0] => Permite transparencias.
+                    [1] => Su compresión no reduce la calidad de imagen.
+                    [2] => Se puede usar en la web.
+                    [3] => Permite archivos más pequeños con la misma calidad.
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                )
+
+        )
+
+    [8] => Array
+        (
+            [descripcion] => ¿Para una imagen de 500 x 500 pixeles con 180 colores diferentes guarado en distintos formatos, que archivo es el más espacio en disco ocupa?
+            [respuestas_correctas] => Array
+                (
+                    [0] => imagen.bmp
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => imagen.jpg
+                    [1] => imagen.gif
+                    [2] => imagen.png
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+            [ocultar_opcion_ninguna_de_las_anteriores] => 1
+        )
+
+    [9] => Array
+        (
+            [descripcion] => Los archivos del tipo GIF
+            [respuestas_correctas] => Array
+                (
+                    [0] => Permiten definir un color como transparente
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Permiten translucidez
+                    [1] => Permiten mostrar imagenes en color real
+                    [2] => Son un formato vectorial
+                )
+
+        )
+
+    [10] => Array
+        (
+            [descripcion] => El audio de un CD de música posee las siguientes características.
+            [respuestas_correctas] => Array
+                (
+                    [0] => 44.1kHz, 16 bits y 2 canales
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => 44.1Hz, 16 bits y 2 canales
+                    [1] => 44.1kHz, 8 bits y 2 canales
+                    [2] => 44.1kHz, 16 bits y 1 canal
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+        )
+
+    [11] => Array
+        (
+            [descripcion] => Cuando hablamos de frecuencia de muestreo en el audio digital.
+            [respuestas_correctas] => Array
+                (
+                    [0] => Se recomienda realizar el doble de muestras que la frecuencia máxima.
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Se recomienda realizar la mitad de muestras que la frecuencia máxima.
+                    [1] => Se recomienda realizar la misma cantidad de muestras que la frecuencia máxima.
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+        )
+
+    [12] => Array
+        (
+            [descripcion] => ¿Cuál de los siguientes parámetros no influye en la calidad del audio digital comprimido?
+            [respuestas_correctas] => Array
+                (
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Frecuencia de muestreo
+                    [1] => Resolución o profundidad de bit.
+                    [2] => Cantidad de canales.
+                    [3] => Bitrate.
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+            [texto_ninguna_de_las_anteriores] => Niguno de los anteriores.
+        )
+
+    [13] => Array
+        (
+            [descripcion] => ¿Cuál de las siguientes formatos de audio permite más compresión manteniendo la calidad de audio?
+            [respuestas_correctas] => Array
+                (
+                    [0] => OGG
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => MP3
+                    [1] => FLAC
+                    [2] => WAV
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+            [ocultar_opcion_ninguna_de_las_anteriores] => 1
+        )
+
+    [14] => Array
+        (
+            [descripcion] => Si la frecuencia de muestreo es menor a la que propone Nyquist en su teorema sucede que
+            [respuestas_correctas] => Array
+                (
+                    [0] => No es posible recuperar la señal original.
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Nada, nyquist justamente indica no se debe superar el limte que él propone.
+                    [1] => La señal de audio tendrá espacios de silencio absoluto.
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+        )
+
+    [15] => Array
+        (
+            [descripcion] => 1 minuto de audio sin comprimir de un CD de música ocupa aproximadamente.
+            [respuestas_correctas] => Array
+                (
+                    [0] => 10MB
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => 35MB
+                    [1] => 1MB
+                    [2] => 100MB
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+        )
+
+    [16] => Array
+        (
+            [descripcion] => ¿Cuál de las siguientes formatos de audio permite audio comprimido sin perdidas?
+            [respuestas_correctas] => Array
+                (
+                    [0] => FLAC
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => MP3
+                    [1] => WAV
+                    [2] => OGG
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+        )
+
+    [17] => Array
+        (
+            [descripcion] => ¿Cuál de las siguientes formatos posee patentes legales?
+            [respuestas_correctas] => Array
+                (
+                    [0] => MP3
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => FLAC
+                    [1] => OGG
+                )
+
+            [ocultar_opcion_ninguna_de_las_anteriores] => 1
+        )
+
+    [18] => Array
+        (
+            [descripcion] => El audio estereo implica
+            [respuestas_correctas] => Array
+                (
+                    [0] => Dos pistas de audio
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Una pista de audio
+                    [1] => Tres pistas de audio
+                    [2] => Cuatro pistas de audio
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+        )
+
+    [19] => Array
+        (
+            [descripcion] => Los archivos de tipo MIDI oscilan en tamaños de
+            [respuestas_correctas] => Array
+                (
+                    [0] => Entre los 4KB y los 200KB aproximadamente.
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Entre los 4MB y los 20MB aproximadamente.
+                    [1] => Entre los 4GB y los 20GB aproximadamente.
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+        )
+
+    [20] => Array
+        (
+            [descripcion] => Fourier afirma que cualquier onda.
+            [respuestas_correctas] => Array
+                (
+                    [0] => Puede construirse como una suma de senos.
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Tiene el doble de la frecuencia máxima que puede escuchar un humano.
+                    [1] => Tienen un ancho de banda finito.
+                )
+
+        )
+
+    [21] => Array
+        (
+            [descripcion] => Cuando un pixel de una imágen tiene 32 bits significa.
+            [respuestas_correctas] => Array
+                (
+                    [0] => Que almacena información de transparencia.
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Que solo son colores de una gama de grises.
+                    [1] => Que no tiene transparencia, solo valores de RGB.
+                )
+
+        )
+
+    [22] => Array
+        (
+            [descripcion] => El Aliasing en el audio digital
+            [respuestas_correctas] => Array
+                (
+                    [0] => Es algo que se busca eliminar.
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Es algo que se espera mantener.
+                    [1] => Mide la calidad del audio digital, mientras más, mejor.
+                    [2] => Mide la calidad del audio analógico, mientras más, mejor.
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+        )
+
+    [23] => Array
+        (
+            [descripcion] => Cuando hablamos de 8, 16, 24 bits en audio digital.
+            [respuestas_correctas] => Array
+                (
+                    [0] => Nos referimos a la cantidad de niveles en el eje de la amplitud.
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Nos referimos a la frecuencia de muestreo.
+                    [1] => Nos referimos al espacio que ocupa un segundo de audio.
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+        )
+
+    [24] => Array
+        (
+            [descripcion] => El ruido blanco, al amplificar o regenerar una señal de audio
+            [respuestas_correctas] => Array
+                (
+                    [0] => Afecta de mayor manera a las señales analógicas
+                )
+
+            [respuestas_incorrectas] => Array
+                (
+                    [0] => Afecta de mayor manera a las señales digitales
+                    [1] => Es un concepto de imágenes digitales, no aplica al audio.
+                    [2] => Afecta a ambas señales por igual.
+                )
+
+            [ocultar_opcion_todas_las_anteriores] => 1
+        )
+
+)
