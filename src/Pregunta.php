@@ -31,4 +31,11 @@ class Pregunta{
 	public function getRespuestas(){
 		return $this->respuestas;
 	}
+	public function todasLasAnt(){
+		return $this->ocultarTodasAnteriores;
+	}
+	public function ningLasAnt(){
+		return $this->ocultarNingunaAnteriores;
+	}
+
 }

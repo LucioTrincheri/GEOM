@@ -45,6 +45,12 @@
       {% for resp in respuestas %}
         <br><label>A) {{resp}}</label>
       {% endfor %}
+      {% if preg.todasLasAnt() == false %}
+         <br><label>X) Todas las anteriores</label>
+      {% endif %}
+      {% if preg.ningLasAnt() == false %}
+         <br><label>X) Ninguna de las anteriores</label>
+      {% endif %}
     </div>
   {% set npreg = npreg + 1 %}
   {% endfor %}
