@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8"> 
 <head>
 <style>
 .columns {
@@ -26,28 +27,24 @@
 </head>
 <body>
 
-<h1>Grid Elements</h1>
-
-<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-
-<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
-
-<div class="grid-container">
-  <div class="grid-item">
-  <label>El pixel es importante debido a</label>
-  <label>A</label>
-  <label>B</label>
-  <label>C</label>
-  <label>D</label>
-  </div>
-  <div class="grid-item">2</div>  
-  <div class="grid-item">3</div>  
-  <div class="grid-item">4</div>
-  <div class="grid-item">5</div>
-  <div class="grid-item">6</div>  
-  <div class="grid-item">7</div>
-  <div class="grid-item">8</div>
+<div>
+  <p style="float: left; padding-left: 20px;"><b>Nombre y Apellido __________________________________________</b></p>
+  <p style="float: right; padding-right: 20px;"><b>Evaluación número 4 - 28/09/2017 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp IPS. TEMA 1</b></p><br><br><br>
 </div>
 
+
+<div class="grid-container">
+  {% for preg in preguntas %}
+    <div class="grid-item">
+      <label>El pixel es importante debido a</label>
+      <label>{{preguntas.descripcion();}}</label>
+      <label>B</label>
+      <label>C</label>
+      <label>D</label>
+    </div>
+
+  {% endfor %}
+
+</div>
 </body>
 </html>

@@ -24,4 +24,7 @@ class Pregunta{
 		shuffle($this->respCorrectas);
 		shuffle($this->respCorrectas);
 	}
+	public function descripcion(){
+		return $this->descripcion;
+	}
 }
