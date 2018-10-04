@@ -25,10 +25,15 @@ function mezclarTests(){
 	shuffle($preguntas);
 }
 
-$loader = new Twig_Loader_Filesystem('templates');
+
+function CrearHTML($preguntas){
+	$loader = new Twig_Loader_Filesystem('templates');
 	$twig = new Twig_Environment($loader);
 	$template = $twig->load('index.html');
 	//Render del HTML con las variables
 	file_put_contents('OutputHTML.html', $template->render(array('preguntas' => $preguntas)));
+}
+
+CrearHTML($preguntas);
 
 ?>
