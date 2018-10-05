@@ -9,6 +9,7 @@ class Pregunta{
 	protected $respuestas = [];
 	protected $ocultarTodasAnteriores = false;
 	protected $ocultarNingunaAnteriores = false;
+	protected $abc = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N'];
 
 	public function __construct($pregunta){
 		$this->descripcion = $pregunta['descripcion'];
@@ -37,5 +38,11 @@ class Pregunta{
 	public function ningLasAnt(){
 		return $this->ocultarNingunaAnteriores;
 	}
-
+	public function getCorrectas(){
+		$letras = [];
+		for($i = 0; $i < count($this->respCorrectas); $i++){
+			$letras[$i] = $this->abc[array_search($this->respCorrectas[$i], $this->respuestas)];
+		}
+		return $letras;
+	}
 }

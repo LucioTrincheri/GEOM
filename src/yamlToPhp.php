@@ -21,13 +21,15 @@ for($i=0; $i<$leng ;$i++){
 
 
 //Work in progress
-function mezclarTests(){
+function mezclarTests($preguntas){
 	$leng = count($preguntas);
 	for($i=0; $i<$leng ;$i++)
 		$preguntas[$i]->shuffleAnswers();
 	shuffle($preguntas);
+	return $preguntas;
 }
-
-CrearEvaluacionAlumno($preguntas);
+$tema = 1;
+$preguntas = mezclarTests($preguntas);
+CrearEvaluacion($preguntas, $tema);
 
 ?>
