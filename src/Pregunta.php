@@ -40,9 +40,20 @@ class Pregunta{
 	}
 	public function getCorrectas(){
 		$letras = [];
-		for($i = 0; $i < count($this->respCorrectas); $i++){
+		$excepcion = [];
+		$i = 0;
+		for(; $i < count($this->respCorrectas); $i++){
 			$letras[$i] = $this->abc[array_search($this->respCorrectas[$i], $this->respuestas)];
 		}
+		if(!$this->ocultarTodasAnteriores && count($this->respIncorrectas) == 0){
+			$excepcion[0] = $this->abc[$i];
+			return $excepcion;}
+		if(!$this->ocultarTodasAnteriores && !$this->ocultarNingunaAnteriores && count($this->respCorrectas) == 0){
+			$excepcion[0] = $this->abc[count($this->respIncorrectas) + 1];
+			return $excepcion;}
+		if(!$this->ocultarNingunaAnteriores && count($this->respCorrectas) == 0){
+			$excepcion[0] = $this->abc[count($this->respIncorrectas)];
+			return $excepcion;}
 		return $letras;
 	}
 }
