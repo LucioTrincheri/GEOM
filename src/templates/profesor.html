@@ -14,10 +14,10 @@
   display: grid;
   padding: 20px;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat (5, 20vh);
   grid-gap: 20px;
-  grid-auto-rows: 300px;
-
 }
+
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -25,6 +25,7 @@
   padding-top:10;
   font-size: 20px;
 }
+
 </style>
 </head>
 <body>
@@ -42,11 +43,11 @@
   {% for preg in preguntas %}
   {% set correctas = preg.getCorrectas() %}
     <div class="grid-item">
-      <b><label>{{npreg}})_
+      <b><label>{{ npreg }}) 
       {% for corr in correctas %}
-      {{corr}} - 
+      {{corr}}  
       {% endfor %}
-      _{{preg.descripcion()}}</label></b><br>
+      - {{preg.descripcion()}}</label></b><br>
       {% set abc = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N'] %}
       {% set index = 0 %}
       {% set respuestas = preg.getRespuestas() %}
