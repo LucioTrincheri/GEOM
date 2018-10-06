@@ -28,6 +28,7 @@ preguntas:
   - descripcion: Las extensiones de archivo que pertenecen al grupo de mapas de bits son
     respuestas_correctas:
       - "JPG, BMP, PNG, GIF"
+      - "Test 2 o + correctas"
     respuestas_incorrectas:
       - Solo PNG
       - Solo JPG
