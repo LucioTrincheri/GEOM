@@ -42,7 +42,8 @@ class Pregunta{
 		$letras = [];
 		$excepcion = [];
 		$i = 0;
-		for(; $i < count($this->respCorrectas); $i++){
+		$size = count($this->respCorrectas);
+		for(; $i < $size; $i++){
 			$letras[$i] = $this->abc[array_search($this->respCorrectas[$i], $this->respuestas)];
 		}
 		if(!$this->ocultarTodasAnteriores && count($this->respIncorrectas) == 0){
