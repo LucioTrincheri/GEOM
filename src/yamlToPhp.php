@@ -25,23 +25,23 @@ $var = readline("Variar las preguntas entre los tests? (y/n): ");
 //Fin de caracteristicas ----------------------------------------------------------
 
 //Achico la cantidad de preguntas necesarias
-function reduccion($yaml, $cant){
+function reduccion($yaml, $cant) {
 	shuffle($yaml);
 	return array_slice($yaml, 0, $cant);
 }
 //Transformo el array en clases 'Pregunta'
-function yalmToPregunta($red){
+function yalmToPregunta($red) {
 	$preguntas = [];
 	$leng = count($red);
-	for($i=0; $i<$leng ;$i++){
+	for ($i = 0; $i < $leng; $i++) {
 		$preguntas[$i] = new Pregunta($red[$i]);
 	}
 	return $preguntas;
 }
 //Mezcla los tests 
-function mezclarTests($preguntas){
+function mezclarTests($preguntas) {
 	$leng = count($preguntas);
-	for($i=0; $i<$leng ;$i++) {
+	for ($i = 0; $i < $leng; $i++) {
 			$preguntas[$i]->shuffleAnswers();
 	}
 	shuffle($preguntas);
@@ -49,8 +49,8 @@ function mezclarTests($preguntas){
 }
 
 //Crea los HTML con las preguntas randomizadas sobre el total y mezcladas
-function evaluacionesSurtidas($yaml, $cant, $test){
-	for($i = 1; $i < $test + 1; $i++){
+function evaluacionesSurtidas($yaml, $cant, $test) {
+	for ($i = 1; $i < $test + 1; $i++) {
 		$red = reduccion($yaml, $cant);
 		$preguntas = yalmToPregunta($red);
 		$preguntas = mezclarTests($preguntas);
