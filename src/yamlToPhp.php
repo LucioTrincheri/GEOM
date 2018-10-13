@@ -71,4 +71,3 @@ if($var == 'n' || $var == 'N'){
 } else{
 	evaluacionesSurtidas($yaml, $cant, $test);
 }
-?>
