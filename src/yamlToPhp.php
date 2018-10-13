@@ -16,7 +16,7 @@ $yaml = $yaml['preguntas'];
 //Pido la cantidad de preguntas para la evaluación
 $cant = readline("Ingrese la cantidad de preguntas a contener en la evaluacion: ");
 $cant = intval($cant);
-if($cant > count($yaml)){$cant = count($yaml);}
+if ($cant > count($yaml)) {$cant = count($yaml); }
 //Pide la cantidad de test a crear
 $test = readline("Ingrese la cantidad de test a crear: ");
 $test = intval($test);
@@ -41,8 +41,9 @@ function yalmToPregunta($red){
 //Mezcla los tests 
 function mezclarTests($preguntas){
 	$leng = count($preguntas);
-	for($i=0; $i<$leng ;$i++)
-		$preguntas[$i]->shuffleAnswers();
+	for($i=0; $i<$leng ;$i++) {
+			$preguntas[$i]->shuffleAnswers();
+	}
 	shuffle($preguntas);
 	return $preguntas;
 }
@@ -57,17 +58,17 @@ function evaluacionesSurtidas($yaml, $cant, $test){
 	}
 }
 //Crea los HTML con las mismas preguntas pero solo cambiadas de lugar
-function evaluacionesNoSurtidas($yaml, $cant, $test){
+function evaluacionesNoSurtidas($yaml, $cant, $test) {
 	$red = reduccion($yaml, $cant);
-	for($i = 1; $i < $test + 1; $i++){
+	for ($i = 1; $i < $test + 1; $i++) {
 		$preguntas = yalmToPregunta($red);
 		$preguntas = mezclarTests($preguntas);
 		CrearEvaluacion($preguntas, $i);
 	}
 }
 
-if($var == 'n' || $var == 'N'){
+if ($var == 'n' || $var == 'N') {
 	evaluacionesNoSurtidas($yaml, $cant, $test);
-} else{
+} else {
 	evaluacionesSurtidas($yaml, $cant, $test);
 }

@@ -16,11 +16,13 @@ class Pregunta{
 		$this->respCorrectas = $pregunta['respuestas_correctas'];
 		$this->respIncorrectas = $pregunta['respuestas_incorrectas'];
 		$this->respuestas = array_merge($this->respCorrectas, $this->respIncorrectas);
-		if(array_key_exists('ocultar_opcion_todas_las_anteriores', $pregunta))
-			$this->ocultarTodasAnteriores = true;
+		if(array_key_exists('ocultar_opcion_todas_las_anteriores', $pregunta)) {
+					$this->ocultarTodasAnteriores = true;
+		}
 
-		if(array_key_exists('ocultar_opcion_ninguna_de_las_anteriores', $pregunta))
-			$this->ocultarNingunaAnteriores = true;
+		if(array_key_exists('ocultar_opcion_ninguna_de_las_anteriores', $pregunta)) {
+					$this->ocultarNingunaAnteriores = true;
+		}
 	}
 	//Dada una clase Pregunta, mezcla las respuestas.
 	public function shuffleAnswers(){
