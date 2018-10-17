@@ -1,3 +1,5 @@
+Scrutinizer: [![Build Status](https://scrutinizer-ci.com/g/LucioTrincheri/GEOM/badges/build.png?b=master)](https://scrutinizer-ci.com/g/LucioTrincheri/GEOM/build-status/master)
+
 # GEOM
 
 #### Objetivo del Trabajo:
