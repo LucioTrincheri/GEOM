@@ -2,4 +2,5 @@
 <ruleset name="GEOM">
 	<description>Code Standard</description>
 	<file>.</file>
+	<rule ref="WordPress">
 </ruleset>
