@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <ruleset name="GEOM">
 	<description>Code Standard</description>
+	<exclude-pattern>./vendor/*</exclude-pattern>
 	<file>.</file>
 	<rule ref="WordPress">
 </ruleset>
