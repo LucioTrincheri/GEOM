@@ -1,0 +1,56 @@
+preguntas:
+
+  - descripcion: Pregunta1 - Respuesta1 correcta
+    respuestas_correctas:
+      - Respuesta 1 - Pregunta 1
+    respuestas_incorrectas:
+      - Respuesta 2 - Pregunta 1
+      - Respuesta 3 - Pregunta 1
+      - Respuesta 4 - Pregunta 1
+    ocultar_opcion_todas_las_anteriores: true
+
+  - descripcion: Pregunta2 - Ninguna de las anteriores
+    respuestas_correctas: []
+    respuestas_incorrectas:
+      - Respuesta 1 - Pregunta 2
+      - Respuesta 2 - Pregunta 2
+      - Respuesta 3 - Pregunta 2
+      - Respuesta 4 - Pregunta 2
+
+  - descripcion: Pregunta3 - Todas las anteriores
+    respuestas_correctas:
+      - Respuesta 1 - Pregunta 3
+      - Respuesta 2 - Pregunta 3
+      - Respuesta 3 - Pregunta 3
+      - Respuesta 4 - Pregunta 3
+    respuestas_incorrectas: []
+
+  - descripcion: Pregunta4 - Respuesta1y2 correcta
+    respuestas_correctas:
+      - Respuesta 1 - Pregunta 4
+      - Respuesta 2 - Pregunta 4
+    respuestas_incorrectas:
+      - Respuesta 3 - Pregunta 4
+      - Respuesta 4 - Pregunta 4
+      - Respuesta 5 - Pregunta 4
+      - Respuesta 6 - Pregunta 4
+      - Respuesta 7 - Pregunta 4
+
+  - descripcion: Pregunta5 - Respuesta1 correcta
+    respuestas_correctas:
+      - Respuesta 1 - Pregunta 5
+    respuestas_incorrectas:
+      - Respuesta 2 - Pregunta 5
+      - Respuesta 3 - Pregunta 5
+      - Respuesta 4 - Pregunta 5
+      - Respuesta 5 - Pregunta 5
+    ocultar_opcion_todas_las_anteriores: true
+    ocultar_opcion_ninguna_de_las_anteriores: true
+
+  - descripcion: Pregunta6 - Respuesta1 correcta
+    respuestas_correctas:
+      - Respuesta 1 - Pregunta 6
+    respuestas_incorrectas:
+      - Respuesta 2 - Pregunta 6
+      - Respuesta 3 - Pregunta 6
+      - Respuesta 4 - Pregunta 6
