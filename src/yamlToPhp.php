@@ -1,17 +1,7 @@
 <?php
-namespace GEOM;
-
-require_once __DIR__.'/../vendor/autoload.php';
-
-//Cargo Yaml
-use Symfony\Component\Yaml\Yaml;
-use Twig_Environment;
-use Twig_Loader_Filesystem;
-require_once("HTMLoader.php");
 
 $yaml = Yaml::parseFile('example/preguntas.yml');
 $yaml = $yaml['preguntas'];
-
 //Caracteristicas de las evaluaciones segun el usuario ----------------------------
 //Pido la cantidad de preguntas para la evaluación
 $cant = readline("Ingrese la cantidad de preguntas a contener en la evaluacion: ");
@@ -23,6 +13,9 @@ $test = intval($test);
 //Pregunto si el usuario quiere que las preguntas varien entre los tests
 $var = readline("Variar las preguntas entre los tests? (y/n): ");
 //Fin de caracteristicas ----------------------------------------------------------
+
+
+
 
 //Achico la cantidad de preguntas necesarias
 function reduccion($yaml, $cant) {
@@ -47,7 +40,6 @@ function mezclarTests($preguntas) {
 	shuffle($preguntas);
 	return $preguntas;
 }
-
 //Crea los HTML con las preguntas randomizadas sobre el total y mezcladas
 function evaluacionesSurtidas($yaml, $cant, $test) {
 	for ($i = 1; $i < $test + 1; $i++) {
@@ -66,7 +58,6 @@ function evaluacionesNoSurtidas($yaml, $cant, $test) {
 		CrearEvaluacion($preguntas, $i);
 	}
 }
-
 if ($var == 'n' || $var == 'N') {
 	evaluacionesNoSurtidas($yaml, $cant, $test);
 } else {
