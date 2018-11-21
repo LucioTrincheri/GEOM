@@ -5,20 +5,20 @@ Travis: [![Build Status](https://travis-ci.org/LucioTrincheri/GEOM.svg?branch=ma
 # GEOM
 
 #### Objetivo del Trabajo:
-Recrear el sistema de Dagos para hacer pruebas desde cero.
+Crear un sistema que genere evaluaciones dado un archivo Yaml con ellas.
 
-#### Puntos clave:
-- Dada una lista de preguntas generar multiples temas.
-- Mezclar preguntas y opciones, guardar las correctas.
-- Cada tema tiene una opcion correcta, las opciones "todas" y "ninguna" son opcionales, de haber dos opciones correctas generar una - opcion extra que incluya a ambas.
-- Generar dos versiones del examen, la original con la correcta marcada y las de examen para uso del alumno.
-- Hacer tests  e incluir coveralls
+#### Características:
+- Capacidad de crear múltiples temas
+- Mezclar las respuestas, así como la capacidad de utilizar las mismas preguntas en todos los exámenes o utilizar otras distintas
+- Cada tema tiene una o más opcioes correctas, siendos opcionales las respuestas "todas las anteriores" y "ninguna de las anteriores".
+- Se creará una versión para el alumno y una para el profesor con las respuestas correctas marcadas.
 
-#### Herramientas:
-- PHP -> Codigo de opciones, mezclar, reconocer correctas, interactuar con html
-- Symfony yaml -> leer archivo yml y convertirlo en un array
-- Twig (dejar para el final) -> escribe una plantilla que se convierte en HTML
-- CSS grid -> Para hacer la grilla de la prueba
+#### Herramientas utilizadas:
+- PHP -> Código de opciones, mezclar, reconocer correctas.
+- Symfony yaml -> leer archivo yml y convertirlo en un array.
+- Twig -> plantilla que dadas las variables (pasadas por PHP) se genera un examen en HTML
+- CSS grid -> Grilla del examen.
 
-#### Recordar:
-En ips.dagos.info tenemos el material para empezar y otros recursos.
+#### Uso:
+Una vez instalado los paquetes requeridos por Composer, ejecutar: php index.php
+Es necesaria una versión de PHP 7.2 o superior.
