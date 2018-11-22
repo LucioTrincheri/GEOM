@@ -31,6 +31,14 @@ class PreguntasTest extends TestCase{
 		$pregunta = new Pregunta($yaml[0]);
 		$respuestas = array("A");
 		$this->assertEquals($pregunta->getCorrectas(), $respuestas);
+		
+		$pregunta = new Pregunta($yaml[2]);
+		$respuestas = array("E");
+		$this->assertEquals($pregunta->getCorrectas(), $respuestas);
+		
+		$pregunta = new Pregunta($yaml[1]);
+		$respuestas = array("F");
+		$this->assertEquals($pregunta->getCorrectas(), $respuestas);
 	}
 	
 	public function testTodas() {
@@ -49,6 +57,28 @@ class PreguntasTest extends TestCase{
 		$this->assertFalse($pregunta->ningLasAnt());
 	}
 	
+	public function testNingunaYTodas() {
+		$yaml = Yaml::parseFile('tests/yamlBase.yml');
+		$yaml = $yaml['preguntas'];
+
+		$pregunta = new Pregunta($yaml[4]);
+		$this->assertTrue($pregunta->todasLasAnt());
+		$this->assertTrue($pregunta->ningLasAnt());
+	}
+
+	public function testShuffle() {
+		$yaml = Yaml::parseFile('tests/yamlBase.yml');
+		$yaml = $yaml['preguntas'];
+		$pregunta1 = new Pregunta($yaml[1]);
+		$pregunta2 = new Pregunta($yaml[1]);
+
+		$pregunta1->shuffleAnswers();
+		$pregunta2->shuffleAnswers();
+
+		$this->assertFalse((($pregunta1->getRespuestas() === $pregunta2->getRespuestas())));
+	}
 }
+
+
 
 
