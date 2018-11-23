@@ -38,4 +38,22 @@ class ExamenTest extends TestCase{
 		$this->assertEquals(count($exam->reduccion($yaml, $cant)), 3);
     }
 
+	public function testYamlToPreg() {
+		$yaml = Yaml::parseFile('tests/yamlBase.yml');
+		$yaml = $yaml['preguntas'];
+		
+		$cant = 1;
+		$test = 1;
+		$var = "N";
+		
+		$exam = new Examen($yaml, $cant, $test, $var);
+        
+        $cant = 3;
+        $red = $exam->reduccion($yaml, $cant);
+
+		$preguntas = $exam->yalmToPregunta($red);
+        
+        $this->assertTrue($preguntas[0] instanceof Pregunta);
+    }
+
 }
