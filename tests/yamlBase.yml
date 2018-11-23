@@ -54,3 +54,12 @@ preguntas:
       - Respuesta 2 - Pregunta 6
       - Respuesta 3 - Pregunta 6
       - Respuesta 4 - Pregunta 6
+
+  - descripcion: Pregunta7 - Ninguna de las anteriores
+    respuestas_correctas: []
+    respuestas_incorrectas:
+      - Respuesta 1 - Pregunta 7
+      - Respuesta 2 - Pregunta 7
+      - Respuesta 3 - Pregunta 7
+      - Respuesta 4 - Pregunta 7
+    ocultar_opcion_todas_las_anteriores: true

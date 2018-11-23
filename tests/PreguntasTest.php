@@ -39,6 +39,10 @@ class PreguntasTest extends TestCase{
 		$pregunta = new Pregunta($yaml[1]);
 		$respuestas = array("F");
 		$this->assertEquals($pregunta->getCorrectas(), $respuestas);
+
+		$pregunta = new Pregunta($yaml[6]);
+		$respuestas = array("E");
+		$this->assertEquals($pregunta->getCorrectas(), $respuestas);
 	}
 	
 	public function testTodas() {
