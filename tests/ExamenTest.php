@@ -21,6 +21,21 @@ class ExamenTest extends TestCase{
 
 		$exam = new Examen($yaml, $cant, $test, $var2);
 		$this->assertTrue(isset($exam));
-    	}
+    }
+	
+	public function testReduccion() {
+		$yaml = Yaml::parseFile('tests/yamlBase.yml');
+		$yaml = $yaml['preguntas'];
 		
+		$cant = 1;
+		$test = 1;
+		$var = "N";
+		
+		$exam = new Examen($yaml, $cant, $test, $var);
+		
+		$cant = 3;
+		
+		$this->assertEquals(count($exam->reduccion($yaml, $cant)), 3);
+    }
+
 }
