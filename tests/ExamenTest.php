@@ -56,4 +56,23 @@ class ExamenTest extends TestCase{
         $this->assertTrue($preguntas[0] instanceof Pregunta);
     }
 
+	public function testMezclarExam() {
+		$yaml = Yaml::parseFile('tests/yamlBase.yml');
+		$yaml = $yaml['preguntas'];
+		
+		$cant = 6;
+		$test = 1;
+		$var = "N";
+		
+		$exam = new Examen($yaml, $cant, $test, $var);
+        $red = $exam->reduccion($yaml, $cant);
+
+		$preguntasSurt = $exam->yalmToPregunta($red);
+		$preguntasNorm = $exam->yalmToPregunta($red);
+        
+		$preguntasSurt = $exam->mezclarTests($preguntasSurt);
+
+        $this->assertFalse($preguntasSurt === $preguntasNorm);
+    }	
+
 }
